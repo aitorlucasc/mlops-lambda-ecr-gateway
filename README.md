@@ -31,8 +31,14 @@ docker tag <IMG_NAME>:latest <XXX>.dkr.ecr.<REGION>.amazonaws.com/<ECR_REPO>
 docker push <XXX>.dkr.ecr.<REGION>.amazonaws.com/<ECR_REPO>            
 ```
 
-# 3. Create the lambda function
+# 3. Create the lambda function and test it
 - Choose the option of creating the lambda function from a docker container.
 - Give a name to the AWS Lambda function.
 - Search for the image you have pushed to the repository.
-- Select your architecture (if you have builded from an M1/M2 Macbook, choose `arm64`).
+- Select your architecture (if you have builded from an M1/M2 Macbook, choose `arm64` ).
+- Click on create.
+- Go to configuration and change the timeout, then create a json for testing, aligned with your data.
+- Click on test and you will see the output of your prediction:
+  - `{'get_credit_probability': 0.9019309332297606, 'get_credit': True}`
+
+
