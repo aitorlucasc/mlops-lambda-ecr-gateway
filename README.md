@@ -19,4 +19,11 @@ If you still have not configured your AWS account:
 ```
 aws configure
 ```
-From here, let's create repo and push the docker image ([documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html)):
+From here, let's tag our docker image, create a ECR repo and push the image ([documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html)):
+```
+# Tag our image with the latest version
+docker tag <IMG_NAME>:latest <XXX>.dkr.ecr.<REGION>.amazonaws.com/<ECR_REPO>
+
+# Push the image to the AWS repo
+docker push <XXX>.dkr.ecr.<REGION>.amazonaws.com/<ECR_REPO>            
+```
