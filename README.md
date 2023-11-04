@@ -19,4 +19,4 @@ If you still have not configured your AWS account:
 ```
 aws configure
 ```
-From here, let's create repo and push the docker image [documentation]([https://pages.github.com/](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html)):
+From here, let's create repo and push the docker image ([documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html)):
