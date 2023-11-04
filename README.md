@@ -1,5 +1,7 @@
 # mlops-lambda-ecr-gateway
 Deployment of a machine learning model using MLE tools from AWS:
-- d
-- a
-- a
+
+Services:
+- AWS Lambda 
+- AWS ECR (Elastic Container Registry)
+- AWS API Gateway
